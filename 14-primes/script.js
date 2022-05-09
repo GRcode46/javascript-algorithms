@@ -7,7 +7,7 @@
 */
 
 function primes(num) {
-    let result = [];
+    const result = [];
     // Напишите код здесь
     for (let i = 2; i <= num; i++) {
         let flag = 0;
