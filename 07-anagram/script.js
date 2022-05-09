@@ -10,6 +10,9 @@
 
 function anagram(str1, str2) {
     // Напишите код здесь
+    if (str1.toLowerCase() === str2.toLowerCase()){
+        return false;
+    }
     const sort1 = str1.toLowerCase().split("").sort().join("");
     const sort2 = str2.toLowerCase().split("").sort().join("");
 

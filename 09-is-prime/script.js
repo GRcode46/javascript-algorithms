@@ -16,7 +16,7 @@ function isPrime(n) {
     } else if (n === 2) {
         return true;
     } else {
-        for (let i = 2; i < n; i++) {
+        for (let i = 2; i < n * 0.5 + 1; i++) {
             if (n % i === 0) {
                 return false;
             }
