@@ -8,6 +8,15 @@
 
 function countZeros(n) {
     // Напишите код здесь
+    if (n < 10 ) {
+        return 0
+    }
+    let str = '';
+    for (let x = 1; x <= n; x++){
+            str = str.concat(x);
+        }
+    const result = str.match(/0/gm)
+    return result.length;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
