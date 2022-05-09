@@ -9,6 +9,9 @@
 
 function intersection(arr1, arr2) {
     // Напишите код здесь
+    const preResult = arr1.filter(x => arr2.includes(x));
+    const result = preResult.filter((val, ind, arr) => arr.indexOf(val) === ind);
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
